@@ -1,15 +1,6 @@
 .greeting {
-	color:#d411a0
+	color:#1411d4
 }
 
-.create-todo input[type="submit"] {
-	display: block;
-	width: 25%;
-	font-size: 1.125rem;
-	padding: 1rem 1.5rem;
-	color: #d411a0;
-	cursor: pointer;
-
-}
 
 

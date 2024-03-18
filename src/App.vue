@@ -23,15 +23,15 @@ onMounted(() => {
 
 <template>
 
- <main class="app">
+ <main>
 		
 		<section class="greeting">
-			<h2 class="title">
+			<h2>
 				To Do List for <input type="text" id="name" placeholder="Name here" v-model="name">
 			</h2>
 		</section>
 
-    <section class="create-todo">
+    <section>
 			<h3>Make a list</h3>
 
 			<form id="new-todo-form" @submit.prevent="addTodo">
@@ -44,7 +44,7 @@ onMounted(() => {
 					v-model="input_content" />
           <h4>Pick a category</h4>
 
-          <div class ="options">
+          <div>
             <label>
 <input 
 type ="radio"
