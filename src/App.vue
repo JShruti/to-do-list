@@ -11,6 +11,18 @@ const todos_asc = computed(() => todos.value.sort((a,b) =>{
 	return a.createdAt - b.createdAt
 }))
 
+const addTodo= ()=> {
+	todos.value.push ({
+		content: input_content.value,
+		category: input_category.value,
+		done:false,
+		createdAt: new Date()
+	})
+}
+
+watch(todos, newval=>{
+	localStorage.setItem('todos',JSON.stingify(newval))
+})
 watch(name, (newVal) => {
 	localStorage.setItem('name', newVal)
 })
